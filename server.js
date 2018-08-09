@@ -12,9 +12,9 @@ app.use(cookieParser());
 app.use(session({
     name: 'NSESSIONID',
     secret: 'Hello I am a long long long secret',
-    resave: true,//添加这行
-    saveUninitialized: true,//添加这行
-    store: new MemoryStore()  // or other session store
+    resave: true,
+    saveUninitialized: true,
+    store: new MemoryStore()
 }));
 
 const casClient = new ConnectCas({
